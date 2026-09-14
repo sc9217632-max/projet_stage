@@ -1,0 +1,637 @@
+CSS
+ 
+ 
+/* =========================
+  RESET
+========================= */
+ 
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+ 
+html {
+   scroll-behavior: smooth;
+}
+ 
+body {
+   font-family: Arial, Helvetica, sans-serif;
+   background: #f1fbff;
+   color: hsl(122, 46%, 84%);
+}
+ 
+ 
+/* =========================
+  HEADER
+========================= */
+ 
+.header {
+   height: 70px;
+   background: white;
+   border-bottom: 2px solid #76aabd;
+ 
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ 
+   padding: 0 7%;
+}
+ 
+.logo {
+   font-size: 18px;
+   font-weight: bold;
+   color: #075c77;
+}
+ 
+.navbar {
+   display: flex;
+   align-items: center;
+   background: #075c77;
+   border-radius: 4px;
+   overflow: hidden;
+}
+ 
+.navbar a {
+   color: white;
+   text-decoration: none;
+   font-size: 11px;
+   padding: 11px 13px;
+   transition: 0.3s;
+}
+ 
+.navbar a:hover {
+   background: #0c7797;
+}
+ 
+.auth {
+   display: flex;
+   gap: 25px;
+}
+ 
+.auth a {
+   color: #075c77;
+   text-decoration: none;
+   font-size: 11px;
+}
+ 
+ 
+/* =========================
+  HERO
+========================= */
+ 
+.hero {
+   min-height: 500px;
+   position: relative;
+ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+   gap: 80px;
+   padding: 60px 10% 100px;
+ 
+   background: #f1fbff;
+}
+ 
+.hero-text {
+   width: 280px;
+}
+ 
+.hero-text > p:first-child {
+   font-size: 15px;
+   color: #333;
+   margin-bottom: 3px;
+}
+ 
+.hero-text h1 {
+   font-size: 48px;
+   line-height: 1;
+   color: #075c77;
+   margin-bottom: 10px;
+}
+ 
+.hero-text .description {
+   font-size: 14px;
+   line-height: 1.55;
+   color: #222;
+}
+ 
+.hero-image {
+   width: 280px;
+}
+ 
+.hero-image img {
+   width: 100%;
+   max-width: 280px;
+   display: block;
+}
+ 
+.hero-buttons {
+   position: absolute;
+   bottom: 40px;
+   left: 0;
+   width: 100%;
+ 
+   display: flex;
+   justify-content: center;
+   gap: 45px;
+}
+ 
+.btn {
+   width: 115px;
+   height: 40px;
+ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+ 
+   border-radius: 5px;
+ 
+   text-decoration: none;
+   font-size: 13px;
+   font-weight: bold;
+}
+ 
+.btn-primary {
+   background: #075c77;
+   color: white;
+}
+ 
+.btn-outline {
+   border: 1px solid #075c77;
+   color: #075c77;
+   background: transparent;
+}
+ 
+.btn:hover {
+   transform: translateY(-2px);
+}
+ 
+ 
+/* =========================
+  PRESENTATION
+========================= */
+ 
+.presentation {
+   background: #11657d;
+   color: white;
+ 
+   padding: 60px 14%;
+ 
+   min-height: 320px;
+   text-align: center;
+}
+ 
+.presentation h2 {
+   font-size: 34px;
+   margin-bottom: 15px;
+}
+ 
+.presentation-intro {
+   font-size: 13px;
+   line-height: 1.5;
+ 
+   max-width: 600px;
+   margin: auto;
+}
+ 
+.presentation-text {
+   text-align: left;
+ 
+   max-width: 900px;
+   margin: 45px auto 0;
+ 
+   font-size: 11px;
+   line-height: 1.45;
+}
+ 
+.presentation-text p {
+   margin-bottom: 5px;
+}
+ 
+ 
+/* =========================
+  TITRES SECTIONS
+========================= */
+ 
+.section-line {
+   width: 135px;
+   height: 5px;
+ 
+   background: #075c77;
+ 
+   border-radius: 10px;
+ 
+   margin: 0 auto 25px;
+}
+ 
+.partners h2,
+.testimonials h2,
+.contact h2 {
+   text-align: center;
+ 
+   font-size: 30px;
+   letter-spacing: 1px;
+ 
+   color: #075c77;
+}
+ 
+ 
+/* =========================
+  PARTENAIRES
+========================= */
+ 
+.partners {
+   padding: 30px 10% 40px;
+}
+ 
+.partners-box {
+   max-width: 760px;
+   height: 230px;
+ 
+   margin: 30px auto;
+ 
+   background: #a5e5f9;
+ 
+   border-radius: 5px;
+ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 55px;
+ 
+   position: relative;
+}
+ 
+.partner img {
+   width: 115px;
+   max-height: 100px;
+   object-fit: contain;
+}
+ 
+.slider-btn,
+.testimonial-arrow {
+   border: none;
+   background: #075c77;
+   color: white;
+ 
+   width: 14px;
+   height: 14px;
+ 
+   border-radius: 2px;
+ 
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ 
+   cursor: pointer;
+}
+ 
+.slider-btn {
+   position: absolute;
+}
+ 
+.slider-btn.left {
+   left: 25px;
+}
+ 
+.slider-btn.right {
+   right: 25px;
+}
+ 
+ 
+/* =========================
+  TEMOIGNAGES
+========================= */
+ 
+.testimonials {
+   padding: 0 10% 50px;
+}
+ 
+.testimonials h2 {
+   margin-bottom: 40px;
+}
+ 
+.testimonial-container {
+   max-width: 850px;
+   margin: auto;
+ 
+   display: flex;
+   align-items: center;
+   justify-content: center;
+ 
+   gap: 45px;
+}
+ 
+.testimonial {
+   width: 200px;
+   min-height: 180px;
+ 
+   border: 1px solid #075c77;
+   border-radius: 4px;
+ 
+   background: transparent;
+ 
+   padding: 42px 15px 15px;
+ 
+   position: relative;
+   text-align: left;
+}
+ 
+.profile {
+   position: absolute;
+ 
+   width: 70px;
+   height: 70px;
+ 
+   object-fit: cover;
+ 
+   border-radius: 50%;
+ 
+   border: 1px solid #075c77;
+ 
+   top: -37px;
+   left: 50%;
+ 
+   transform: translateX(-50%);
+}
+ 
+.testimonial h3 {
+   font-size: 13px;
+   color: #111;
+}
+ 
+.testimonial span {
+   display: block;
+ 
+   font-size: 10px;
+   color: #555;
+ 
+   margin-bottom: 15px;
+}
+ 
+.testimonial p {
+   font-size: 9px;
+   line-height: 1.45;
+   color: #111;
+}
+ 
+.testimonial-arrow {
+   flex-shrink: 0;
+}
+ 
+ 
+/* =========================
+  CONTACT
+========================= */
+ 
+.contact {
+   padding: 0 10% 60px;
+}
+ 
+.contact h2 {
+   margin-bottom: 30px;
+}
+ 
+.contact-box {
+   max-width: 760px;
+ 
+   margin: auto;
+ 
+   background: #11657d;
+ 
+   padding: 30px 90px 25px;
+}
+ 
+.contact form {
+   display: flex;
+   flex-direction: column;
+}
+ 
+.contact label {
+   color: white;
+ 
+   font-size: 10px;
+ 
+   margin-bottom: 7px;
+}
+ 
+.contact input,
+.contact textarea {
+   border: none;
+   border-radius: 2px;
+ 
+   background: #f5f5f5;
+ 
+   margin-bottom: 10px;
+ 
+   padding: 10px;
+ 
+   font-family: inherit;
+}
+ 
+.contact input {
+   height: 29px;
+}
+ 
+.contact textarea {
+   height: 90px;
+   resize: none;
+}
+ 
+ 
+/* =========================
+  FOOTER
+========================= */
+ 
+.footer {
+   background: #000b0e;
+   color:white;
+ 
+   padding: 35px 7% 15px;
+}
+ 
+.footer-content {
+   display: flex;
+   justify-content: space-between;
+ 
+   max-width: 1000px;
+   margin: auto;
+ 
+   gap: 80px;
+}
+ 
+.footer-column {
+   width: 35%;
+}
+ 
+.footer-column h3 {
+   font-size: 14px;
+   margin-bottom: 20px;
+}
+ 
+.footer-column p {
+   font-size: 9px;
+   line-height: 1.5;
+   color: #ddd;
+}
+ 
+.social {
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+}
+ 
+.social a,
+.social-bottom a {
+   color: blue;
+   font-size: 15px;
+}
+ 
+.footer-bottom {
+   margin-top: 35px;
+ 
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+ 
+   gap: 20px;
+}
+ 
+.social-bottom {
+   display: flex;
+   gap: 5px;
+}
+ 
+.footer-bottom p {
+   font-size: 7px;
+   color: #aaa;
+}
+ 
+ 
+/* =========================
+  RESPONSIVE
+========================= */
+ 
+@media screen and (max-width: 900px) {
+ 
+   .header {
+       padding: 0 4%;
+   }
+ 
+   .navbar a {
+       padding: 10px 7px;
+       font-size: 9px;
+   }
+ 
+   .auth {
+       gap: 10px;
+   }
+ 
+   .hero {
+       gap: 30px;
+       padding-left: 5%;
+       padding-right: 5%;
+   }
+ 
+   .presentation {
+       padding: 50px 8%;
+   }
+ 
+   .partners-box {
+       gap: 20px;
+   }
+ 
+   .contact-box {
+       padding: 30px 50px;
+   }
+}
+ 
+ 
+@media screen and (max-width: 650px) {
+ 
+   .header {
+       height: auto;
+       padding: 15px;
+ 
+       flex-wrap: wrap;
+       gap: 15px;
+   }
+ 
+   .navbar {
+       order: 3;
+       width: 100%;
+ 
+       justify-content: center;
+   }
+ 
+   .navbar a {
+       font-size: 8px;
+       padding: 8px;
+   }
+ 
+   .hero {
+       flex-direction: column;
+ 
+       text-align: center;
+ 
+       padding-bottom: 110px;
+   }
+ 
+   .hero-text {
+       width: 100%;
+   }
+ 
+   .hero-image {
+       width: 220px;
+   }
+ 
+   .hero-buttons {
+       gap: 15px;
+   }
+ 
+   .presentation {
+       padding: 45px 7%;
+   }
+ 
+   .presentation-text {
+       text-align: center;
+   }
+ 
+   .partners-box {
+       height: 180px;
+       gap: 8px;
+   }
+ 
+   .partner img {
+       width: 80px;
+   }
+ 
+   .testimonial-container {
+       flex-direction: column;
+       gap: 50px;
+   }
+ 
+   .testimonial {
+       width: 230px;
+   }
+ 
+   .contact-box {
+       padding: 25px;
+   }
+ 
+   .footer-content {
+       flex-direction: column;
+       gap: 30px;
+   }
+ 
+   .footer-column {
+       width: 100%;
+   }
+ 
+   .social {
+       flex-direction: row;
+   }
+}
